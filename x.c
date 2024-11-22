@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include <windows.h> // For Windows sound playback, use appropriate header for other OS
+#include <windows.h>
 
 #define MAX_CHORD_LENGTH 3
 #define MAX_SEQUENCE_LENGTH 100
@@ -29,7 +29,6 @@ Scale scales[NUM_SCALES] = {
     // Add more scales as needed
 };
 
-// Function prototypes
 MusicChord parse_chord(const char* chord_str); // Updated return type
 int validate_chord_in_scale(MusicChord chord, Scale scale); // Updated parameter type
 void play_chord(MusicChord chord); // Updated parameter type
